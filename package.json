@@ -11,25 +11,24 @@
     "index.js"
   ],
   "scripts": {
+    "build": "rimraf \"*.d.ts\" && tsc",
     "test": "node --conditions development test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/charliewilco/remark-image-url.git"
-  },
+  "repository": "charliewilco/remark-image-url",
   "dependencies": {
     "@types/mdast": "^3.0.0",
     "unified": "^10.0.0",
     "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {
-    "@types/tape": "^4.0.0",
     "@types/node": "^18.7.21",
-    "type-coverage": "^2.0.0",
-    "typescript": "^4.0.0",
+    "@types/tape": "^4.0.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "tape": "^5.2.2"
+    "rimraf": "^3.0.2",
+    "tape": "^5.2.2",
+    "type-coverage": "^2.0.0",
+    "typescript": "^4.0.0"
   },
   "keywords": [],
   "author": "Charlie ⚡",

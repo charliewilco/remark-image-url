@@ -46,7 +46,10 @@ test("remark-img-links", async function (t) {
       .process("![Screenshot](https:github.com/images/screenshot.png)");
   } catch (err) {
     const expectedYield = "Missing required `absolutePath` option.";
-    t.equal(err.message, expectedYield);
+
+    if (err) {
+      t.equal(err.message, expectedYield);
+    }
   }
 
   t.end();
