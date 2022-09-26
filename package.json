@@ -1,6 +1,6 @@
 {
   "name": "@charliewilco/remark-image-url",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "sideEffects": false,
   "type": "module",
